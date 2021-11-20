@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cartão WTF</title>
+    <link rel=stylesheet href="css/style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <a href="https://www.wtf.pt" target="_blank">
+            <img src="imagens/wtf_logo.jpeg" height="100px" width="500px">
+        </a>
+    </header>
+
+    <nav>
+        <a href="index.html">Tarifários</a>
+        <a href="cinemas.html">Cinema</a>
+        <a href="apps.html">Apps</a>
+    </nav>
+
+    <hr>
+
+    <main>
+
+        <h1>Adesão Cartão WTF</h1>
+
+        <form>
+            <fieldset>
+                <legend>Dados Pessoais:</legend>
+                Nome: <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>
+                <br>
+                <br>
+                Sexo: <input type="radio" name="sexo" value="M" id="sexo" checked> Masculino
+                <input type="radio" name="sexo" value="F" id="sexo"> Feminino
+                <br>
+                <br>
+                Data de Nascimento: <input type="date" name="data_nasc" id="data_nasc">
+                <br>
+                <br>
+                Estado civil: <select name="estado_civil" id="estado_civil" placeholder="Escolha uma opção">
+                    <option value="solteiro">Solteiro</option>
+                    <option value="casado">Casado</option>
+                    <option value="divorciado">Divorciado</option>
+                    <option value="viuvo">Viúvo</option>
+                </select>
+                Número de filhos: <input type="number" name="filhos" id="filhos" value="2" min="0" max="5">
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend>Contactos:</legend>
+                Código Postal: <input type="number" size="4" min="1000" max="9999" placeholder="0000"
+                    title="Insira quatro algarismos para o indicativo."> - <input type="number" size="3" max="999"
+                    placeholder="000" title="Insira três algarismos para a extensão.">
+                <br>
+                <br>
+                Morada: <textarea rows="5" cols="106" name="morada" id="morada"></textarea>
+                <br>
+                <br>
+                Email: <input type="email" name="email" id="email" placeholder="ex:alguem@gmail.com">
+                <br>
+                <br>
+                Password: <input type="password" name="password" id="password">
+            </fieldset>
+
+            <div>
+                <i>Pretende ser contactado através de:</i>
+                <input class="checkbox" type="checkbox" name="email">Email
+                <input class="checkbox" type="checkbox" name="telemovel">Telemóvel
+                <input class="checkbox" type="checkbox" name="correio">Correio
+                <br>
+                <button type="reset">Limpar</button><button type="submit">Confirmar</button>
+            </div>
+        </form>
+
+
+    </main>
+</body>
+
+</html>
